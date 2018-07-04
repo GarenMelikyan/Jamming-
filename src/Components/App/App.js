@@ -26,7 +26,7 @@ constructor(props) {
   		<div className="App">
     	<SearchBar/>
     	<div className="App-playlist">
-      	<SearchResults searchResults = {this.state.searchResults}/>
+      	<SearchResults ssearchResults={this.state.searchResults}/>
       	<PlayList/>
     </div>
   </div>
