@@ -12,10 +12,10 @@ constructor(props) {
 
     this.state = {
         searchResults:[
-        {name: '',
-        artist: '',
-        album: '',
-        id: ''} ]
+        {name: 'Tiny Dancer',
+        artist: 'Elton John',
+        album: 'Love Story',
+        id: '1'} ]
     };
 }
 
@@ -26,7 +26,7 @@ constructor(props) {
   		<div className="App">
     	<SearchBar/>
     	<div className="App-playlist">
-      	<SearchResults/>
+      	<SearchResults searchResults = {this.state.searchResults}/>
       	<PlayList/>
     </div>
   </div>

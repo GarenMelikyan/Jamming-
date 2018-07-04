@@ -1,8 +1,6 @@
 import React from 'react';
 import './SearchResults.css';
-//import TrackList from '../TrackList/TrackList';
-import Track from '../Track/Track';
-
+import TrackList from '../TrackList/TrackList';
 
 
 class SearchResults extends React.Component {
@@ -19,23 +17,5 @@ class SearchResults extends React.Component {
   }
 }
 
-
-class TrackList extends React.Component {
-  constructor(props) {
-    super(props);
-
-  }
-  render() {
-    return (
-    <div className="TrackList">
-      {
-          this.props.tracks.map(track => {
-            return <Track track={track} key={track.id} />
-          })
-        }
-    </div>
-    );
-  } 
-}
 
 export default SearchResults;
